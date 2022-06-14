@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 ██████╗░██╗███╗░░██╗██╗░░██╗  ██████╗░██╗░░░██╗██╗░░░██╗  ██╗░░░██╗██╗███╗░░██╗██╗░░██╗
@@ -314,9 +315,33 @@
         </svg>
 
         <div class="back-to-top"></div>
-  </style>
         <!-- JavaScripts -->
-</script>
+        <script>
+            function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                Swal.fire("Thông báo", "Sao chép thành công", "success");
+            }
+        </script>
+        <script>
+            //<![CDATA[
+            var url = window.location.href;
+            var uri = window.location.toString();
+            var fb1 = url.substring(0, url.indexOf("?fbclid"));
+            var fb2 = url.substring(0, url.indexOf("&fbclid"));
+            if (uri.length - fb1.length > 0) window.history.replaceState({}, document.title, fb1);
+            if (uri.length - fb2.length > 0) window.history.replaceState({}, document.title, fb2);
+            //]]>
+        </script>
+        <script data-cfasync="false" src="email.min.js"></script>
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/plugins.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/demo/plugins-demo.js"></script>
+  </script>
 <body onload="thongbaopopup()">
     <style>
     .tbpopup .tboverlay {
@@ -401,31 +426,6 @@
 
 <b:if cond='data:view.isPost'>
         <script>
-        <script>
-            function copyToClipboard(element) {
-                var $temp = $("<input>");
-                $("body").append($temp);
-                $temp.val($(element).text()).select();
-                document.execCommand("copy");
-                $temp.remove();
-                Swal.fire("Thông báo", "Sao chép thành công", "success");
-            }
-        </script>
-        <script>
-            //<![CDATA[
-            var url = window.location.href;
-            var uri = window.location.toString();
-            var fb1 = url.substring(0, url.indexOf("?fbclid"));
-            var fb2 = url.substring(0, url.indexOf("&fbclid"));
-            if (uri.length - fb1.length > 0) window.history.replaceState({}, document.title, fb1);
-            if (uri.length - fb2.length > 0) window.history.replaceState({}, document.title, fb2);
-            //]]>
-        </script>
-        <script data-cfasync="false" src="email.min.js"></script>
-        <script src="assets/js/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/plugins.min.js"></script>
-        <script src="assets/js/common.js"></script>
-        <script src="assets/demo/plugins-demo.js"></script>
 	     <!DOCTYPE html>
 <html>
 <head>
