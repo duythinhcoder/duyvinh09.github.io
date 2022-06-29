@@ -57,13 +57,13 @@
                 <header class="header box">
                     <div class="header__left">
                         <div class="header__photo">
-                            <img class="header__photo-img" src="//i.imgur.com/eK2eDhk.png" alt="Admin Vinh !" />
+                            <img class="header__photo-img" src="/assets/img/avatar.svg" />
                         </div>
                         <div class="header__base-info">
                             <h2 class="title titl--h1 Ubuntu">
-                                <b>Đinh Duy Vinh <img src="//ngocminh.it/all/svg/tich-xanh.svg" alt="Đã Xác Minh" style="height: 24px;" /></b>
+                                <b>Đinh Duy Vinh<img src="/assets/img/tich-xanh.png" style="height: 24px;" /></b>
                             </h2>
-                            <div class="skill-item" style="color: #ef9d64;"><b>(Byy)</b></div>
+                            <div class="skill-item" style="color: #ef9d64;"><b>Developer - Blogger</b></div>
                             <ul class="header__social">
                                 <li>
                                     <a href="https://www.facebook.com/duyvinh09/"><i class="fab fa-facebook"></i></a>
@@ -137,7 +137,7 @@
                                     <!-- Case Item -->
                                     <div class="col-12 col-lg-6">
                                         <div class="case-item">
-                                            <img src="img/mbbank.png" height="55px" />
+                                            <img src="/assets/img/mbbank.png" height="55px" />
                                             <div>
                                                 &nbsp;
                                                 <h4 class="title title--h4">MB Bank ①</h4>
@@ -145,7 +145,7 @@
                                                     <b>DINH DUY VINH</b><br />
                                                     <b id="mbbank">0914428517</b>
                                                 </p>
-                                                <button type="button" style="height: 30px; width: 100px;" class="btn btn-primary" onclick="copyToClipboard('#mbbank')">COPY</button>
+                                                <button type="button" class="btn btn-primary btn-copy" onclick="copyToClipboard('#mbbank')">COPY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -153,7 +153,7 @@
                                     <!-- Case Item -->
                                     <div class="col-12 col-lg-6">
                                         <div class="case-item">
-                                            <img src="img/mbbank.png" height="55px" />
+                                            <img src="/assets/img/mbbank.png" height="55px" />
                                             <div>
                                                 &nbsp;
                                                 <h4 class="title title--h4">MB Bank ②</h4>
@@ -161,7 +161,7 @@
                                                     <b>DINH DUY VINH</b><br />
                                                     <b id="mbbank">7609012005</b>
                                                 </p>
-                                                <button type="button" style="height: 30px; width: 100px;" class="btn btn-primary" onclick="copyToClipboard('#mbbank')">COPY</button>
+                                                <button type="button" class="btn btn-primary btn-copy" onclick="copyToClipboard('#mbbank')">COPY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +169,7 @@
                                     <!-- Case Item -->
                                     <div class="col-12 col-lg-6">
                                         <div class="case-item">
-                                            <img src="img/momo.png" height="55px" />
+                                            <img src="/assets/img/momo.png" height="55px" />
                                             <div>
                                                 &nbsp;
                                                 <h4 class="title title--h4">Momo</h4>
@@ -177,13 +177,13 @@
                                                     <b>Đinh Duy Vinh</b><br />
                                                     <b id="momo">0914428517</b>
                                                 </p>
-                                                <button type="button" style="height: 30px; width: 100px;" class="btn btn-primary" onclick="copyToClipboard('#momo')">COPY</button>
+                                                <button type="button" class="btn btn-primary btn-copy" onclick="copyToClipboard('#momo')">COPY</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="case-item">
-                                            <img src="img/pay.png" height="55px" />
+                                            <img src="/assets/img/pay.png" height="55px" />
                                             <div>
                                                 &nbsp;
                                                 <h4 class="title title--h4">Zalo Pay</h4>
@@ -191,7 +191,7 @@
                                                     <b>Đinh Duy Vinh</b><br />
                                                     <b id="pay">0914428517</b>
                                                 </p>
-                                                <button type="button" style="height: 30px; width: 100px;" class="btn btn-primary" onclick="copyToClipboard('#pay')">COPY</button>
+                                                <button type="button" class="btn btn-primary btn-copy" onclick="copyToClipboard('#pay')">COPY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -208,61 +208,22 @@
                             </div>
                         </div>
 
-                        <!-- Footer -->
+                       <!-- Footer -->
                         <footer class="footer">
-                            © 2022 Vận Hành Bởi
-                            <a href="/">
-                                <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-                                    document.write("Đinh Duy Vinh ✓");
-                                </script>
-                            </a>
+                            © 2021 Vận Hành Bởi Minh
                         </footer>
                     </div>
                 </div>
             </div>
         </main>
-
-        <!-- SVG masks -->
-        <svg class="svg-defs">
-            <clippath id="avatar-box">
-                <path
-                    d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"
-                ></path>
-            </clippath>
-            <clippath id="avatar-hexagon">
-                <path
-                    d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"
-                ></path>
-            </clippath>
-        </svg>
-
-        <div class="back-to-top"></div>
         <!-- JavaScripts -->
-        <script>
-            function copyToClipboard(element) {
-                var $temp = $("<input>");
-                $("body").append($temp);
-                $temp.val($(element).text()).select();
-                document.execCommand("copy");
-                $temp.remove();
-                Swal.fire("Thông báo", "Sao chép thành công", "success");
-            }
-        </script>
-        <script>
-            //<![CDATA[
-            var url = window.location.href;
-            var uri = window.location.toString();
-            var fb1 = url.substring(0, url.indexOf("?fbclid"));
-            var fb2 = url.substring(0, url.indexOf("&fbclid"));
-            if (uri.length - fb1.length > 0) window.history.replaceState({}, document.title, fb1);
-            if (uri.length - fb2.length > 0) window.history.replaceState({}, document.title, fb2);
-            //]]>
-        </script>
-        <script data-cfasync="false" src="email.min.js"></script>
-        <script src="assets/js/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/plugins.min.js"></script>
-        <script src="assets/js/common.js"></script>
-        <script src="assets/demo/plugins-demo.js"></script>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/jquery-3.4.1.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/sweetalert2.all.min.js"></script>
+        <script src="/assets/js/plugins.min.js"></script>
+        <script src="/assets/js/common.js"></script>
+    </body>
+</html>
 	     <!DOCTYPE html>
 <html>
 <head>
