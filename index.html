@@ -1,348 +1,355 @@
-
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+██████╗░██╗███╗░░██╗██╗░░██╗  ██████╗░██╗░░░██╗██╗░░░██╗  ██╗░░░██╗██╗███╗░░██╗██╗░░██╗
+██╔══██╗██║████╗░██║██║░░██║  ██╔══██╗██║░░░██║╚██╗░██╔╝  ██║░░░██║██║████╗░██║██║░░██║
+██║░░██║██║██╔██╗██║███████║  ██║░░██║██║░░░██║░╚████╔╝░  ╚██╗░██╔╝██║██╔██╗██║███████║
+██║░░██║██║██║╚████║██╔══██║  ██║░░██║██║░░░██║░░╚██╔╝░░  ░╚████╔╝░██║██║╚████║██╔══██║
+██████╔╝██║██║░╚███║██║░░██║  ██████╔╝╚██████╔╝░░░██║░░░  ░░╚██╔╝░░██║██║░╚███║██║░░██║
+╚═════╝░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ╚═════╝░░╚═════╝░░░░╚═╝░░░  ░░░╚═╝░░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="https://i.imgur.com/l6PqP7F.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Đinh Duy Vinh - PROFILE</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="https://i.imgur.com/D2T3Eak.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <h2 class="profile__name">Đinh Duy Vinh <img src="//ngocminh.it/all/svg/tich-xanh.svg" alt="Đã Xác Minh" style="height: 15px;" /></b>
-                    </h2>
-                    <h3 class="profile__profession">🌐 FACEBOOK - TIK TOK - INSTAGRAM 🌐 <br> 📩 TIME WORK: 7:00 - 22:00 📩 </h3>
-
-                    <ul class="profile__social">
-                        <a href="https://www.facebook.com/100015359342786" target="_blank" class="profile__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://zalo.me/0914428517" target="_blank" class="profile__social-link">
-                            <i class="ri-question-answer-fill"></i>
-                        </a>
-                        <a href="https://github.com/dinhduyvinh" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">2005</h3>
-                        <p class="profile__info-description">
-                            Năm sinh<br> 
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">100%</h3>
-                        <p class="profile__info-description">
-                            Độ Uy Tín
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">4.9/5 sao</h3>
-                        <p class="profile__info-description">Khách Hàng <br> Đánh Giá</p>
-                    </div>
-                </div>
-
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a href="thongtinthanhtoan" class="button">
-                        Thông Tin Thanh Toán<i class="ri-bank-line"></i>
-                    </a>
-                     <a href="guicrushne" class="button">
-                        Gửi Tới Cậu Nè !! <i class="ri-heart-fill"></i>
-                    </a>
-
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        <a href="https://api.whatsapp.com/send?phone=0914428517&text=Hello, more information!" target="_blank" class="button button__small button__gray">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
-                        <!-- Insert your brand name or profile -->
-                        <a href="https://m.me/100015359342786" target="_blank" class="button button__small button__gray">
-                            <i class="ri-messenger-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-               
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Wedsite của mình
-                         
-                    </button>
-                   
-         
-                    <button class="filters__button" data-target="#skills">
-                        Kĩ Năng Đang Học
-                    </button>
-                    
-                    <button class="filters__button" data-target="#tucodethem">
-                        Xem Thêm
-                    </button>
-                    
-                </ul>
-
-                <div class="filters__sections">
-                    
-                
-        
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                           Lưu ý Mobile : Bấm vào ảnh sau đó bấm vào con mắt để được chuyển hướng sang web
-             
-  
-
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="https://i.imgur.com/ayHUdOk.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">WED CHỦ</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/XoP7vJ9.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">Thông Tin Cá Nhân --> Bank</h3>
-                                    <a href="https://dinhduyvinh.blogspot.com/" class="projects__button button button__small">
-                                        <i class="ri-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/ktgMhBX.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">Báo Sôi Nổi</h3>
-                                    <a href="https://baosoinoi247.blogspot.com/" class="projects__button button button__small">
-                                        <i class="ri-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/dTYbqX6.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Coder</span>
-                                    <h3 class="projects__title">Checkscam</h3>
-                                    <a href="https://chongluadao24h.com/profile/dinh-duy-vinh" class="projects__button button button__small">
-                                        <i class="ri-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Website DVFB</span>
-                                    <h3 class="projects__title">Trumlikesubre.com</h3>
-                                    <a href="https://trumlikesubre.com/" class="projects__button button button__small">
-                                        <i class="ri-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Xàm Thôi Chứ Biết Mọe Gì Đâu</h3>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="https://i.imgur.com/l6PqP7F.png" type="image/x-icon">
     
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">JavaScript</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">React</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-                        <div class="skills__area">
-                            <h3 class="skills__title">Để Zậy Cho Chuyển Nghiệp Thôi</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Firebase</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Python</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Node Js</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--=============== tucodethem===============-->
-                     <div class="skills__content grid" data-content id="tucodethem">
-                         Lười code thêm quá nên bên này update sau nhen ^^
-                         
-                </div>
-               </div> 
-            </section>
-            
-        </main>
-        
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; <a href='https://zalo.me/0914428517'> ĐINH DUY VINH </a> NO COPPY - CODE WED NÀY KHỔ LẮM
-            </span>
-        </footer>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-        <head>
-<title>Vi du the marquee trong HTML</title>
+    <title>Đinh Duy Vinh - PROFILE</title>
 </head>
 <body>
-  <marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"style="border:blue 2px SOLID"> Chào mừng các bạn đến với <font color="blue"> THÔNG TIN CÁ NHÂN </font> của <font color="green"> ĐINH DUY VINH </marquee>
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
+        <!-- Theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-    </body>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <!-- Insert your image, according to the example size of the portfolio -->
+                        <img src="https://i.imgur.com/D2T3Eak.jpg" alt="">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Đinh Duy Vinh <img src="//ngocminh.it/all/svg/tich-xanh.svg" alt="Đã Xác Minh" style="height: 15px;" /></b>
+                </h2>
+                <h3 class="profile__profession">🌐 FACEBOOK - TIK TOK - INSTAGRAM 🌐 <br> 📩 TIME WORK: 7:00 - 22:00 📩 </h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.facebook.com/100015359342786" target="_blank" class="profile__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://zalo.me/0914428517" target="_blank" class="profile__social-link">
+                        <i class="ri-question-answer-fill"></i>
+                    </a>
+                    <a href="https://github.com/dinhduyvinh" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+999</h3>
+                    <p class="profile__info-description">
+                        Trình Độ<br> 
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">100%</h3>
+                    <p class="profile__info-description">
+                        Độ Uy Tín
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">4.9/5 sao</h3>
+                    <p class="profile__info-description">Khách Hàng <br> Đánh Giá</p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <!-- Insert your CV -->
+                <a href="thongtinthanhtoan" class="button">
+                    Thông Tin Thanh Toán<i class="ri-bank-line"></i>
+                </a>
+                 <a href="guicrushne" class="button">
+                    Gửi Tới Cậu Nè !! <i class="ri-heart-fill"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <!-- Insert a real number plus country code -->
+                    <a href="https://api.whatsapp.com/send?phone=0914428517&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <!-- Insert your brand name or profile -->
+                    <a href="https://m.me/100015359342786" target="_blank" class="button button__small button__gray">
+                        <i class="ri-messenger-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+           
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Wedsite của mình
+                     
+                </button>
+               
+     
+                <button class="filters__button" data-target="#skills">
+                    Kĩ Năng Đang Học
+                </button>
+                
+                <button class="filters__button" data-target="#tucodethem">
+                    Xem Thêm
+                </button>
+                
+            </ul>
+
+            <div class="filters__sections">
+                
+            
+    
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                       Lưu ý Mobile : Bấm vào ảnh sau đó bấm vào con mắt để được chuyển hướng sang web
+         
+
+
+                        <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                        <img src="https://i.imgur.com/ayHUdOk.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">ĐINH DUY VINH</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="https://i.imgur.com/XoP7vJ9.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Thông Tin Cá Nhân --> Bank</h3>
+                                <a href="https://dinhduyvinh.blogspot.com/" class="projects__button button button__small">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="https://i.imgur.com/ktgMhBX.png" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Báo Sôi Nổi</h3>
+                                <a href="https://baosoinoi247.blogspot.com/" class="projects__button button button__small">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="https://i.imgur.com/dTYbqX6.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Kiểm Tra, Tố Cáo Lừa Đảo</span>
+                                <h3 class="projects__title">[CHECK SCAM]</h3>
+                                <a href="https://chongluadao24h.com/profile/dinh-duy-vinh" class="projects__button button button__small">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/project5.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Website DVFB</span>
+                                <h3 class="projects__title">Trumlikesubre.com</h3>
+                                <a href="https://trumlikesubre.com/" class="projects__button button button__small">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Xàm Thôi Chứ Biết Mọe Gì Đâu</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Để Zậy Cho Chuyển Nghiệp Thôi :))</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Advance</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">Firebase</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+    
+                                    <div>
+                                        <h3 class="skills__name">Node Js</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--=============== tucodethem===============-->
+                 <div class="skills__content grid" data-content id="tucodethem">
+                     Đang update (website chưa hoàn thiện) ^^
+                     
+            </div>
+           </div> 
+        </section>
+        
+    </main>
+    
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; </a>  2022 </a> Hệ thống thiết kế và vận hành bởi <a href="https://www.facebook.com/100015359342786/">ĐINH DUY VINH
+        </span>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <head>
+<title>Đinh Duy Vinh (Byy)</title>
+</head>
+<body>
+<marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"style="border:blue 2px SOLID"> Chào mừng các bạn đến với <font color="blue"> THÔNG TIN CÁ NHÂN </font> của <font color="green"> ĐINH DUY VINH </marquee>
+
+</body>
 </html>
