@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe </title>
+    <title>Game Giải Trí Caro </title>
     <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./document/style.css">
 </head>
@@ -26,8 +26,8 @@
         </div>
         <div class="end-game">
             <div id="result">dddd</div>
-            <button id="restart">Continue</button>
-            <button onclick="window.location.reload()" id="reload">↻ Restart</button>
+            <button id="restart">Tiếp Tục</button>
+            <button onclick="window.location.reload()" id="reload">↻ Bắt Đầu Lại</button>
 
         </div>
         <div class="game-container">
@@ -48,31 +48,31 @@
                 <h1 class="nameGame">TicTacToe</h1>
                 <div class="game-mode">
                     <div class="select-mod">
-                        <h3 class="txt-filed">select game mode</h3>
+                        <h3 class="txt-filed">chọn chế độ trò chơi</h3>
                         <div class="check-mod">
                             <input type="radio" checked name="mod" id="one-player-mod">
-                            <label for="one-player-mod" class="label-check">One Player</label><br>
+                            <label for="one-player-mod" class="label-check">Một Người Chơi</label><br>
                             <input type="radio" name="mod" id="two-player-mod">
-                            <label for="two-player-mod" class="label-check">Two Player</label><br>
+                            <label for="two-player-mod" class="label-check">Hai Người Chơi</label><br>
                         </div>
-                        <div onclick="doneMod()" class="btn-select-mod btn-hover-and-active">Done</div>
+                        <div onclick="doneMod()" class="btn-select-mod btn-hover-and-active">Xong</div>
                     </div>
                     <div class="form-one-player">
                         <div class="type-pl first">
-                            <div class="name-player">Player</div>
+                            <div class="name-player">Người Chơi</div>
                             <div class="input-type">
                                 <input type="text" name="player" value="PlayerName" class="type-name-player input-txt" id="one-player" placeholder="name">
                             </div>
                         </div>
                         <div class="btn-submit">
-                            <button type="button" class="btn-hover-and-active" id="submit-one-player" >Play</button>
+                            <button type="button" class="btn-hover-and-active" id="submit-one-player" >Chơi</button>
                         </div>
                     </div>
 
 
                     <div class="form-two-player">
                         <div class="type-pl first">
-                            <div class="name-player">Player 1</div>
+                            <div class="name-player">Người Chơi 1</div>
                             <div class="input-type">
                                 <input type="text" name="player1" value="Player1" class="type-name-player input-txt" id="pl1" placeholder="name">
                                 <div class="checkbox">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class="type-pl">
-                            <div class="name-player">Player 2</div>
+                            <div class="name-player">Người Chơi 2</div>
                             <div class="input-type">
                                 <input type="text" name="player2" value="Player2" class="type-name-player input-txt" id="pl2" placeholder="name">
                             </div>
